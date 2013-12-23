@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <base href="http://glassboard.com/" />
+		<title> Glassboard - Know who you're sharing with. |  Glassboard - Know who you're sharing with.
+</title>
+        <meta name="MSSmartTagsPreventParsing" content="true" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link href="stylesheets/screen.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript"> </script> <!-- FOUC hack: http://www.bluerobot.com/web/css/fouc.asp -->
+        <script src="js-global/FancyZoom.js" type="text/javascript"></script>
+        <script src="js-global/FancyZoomHTML.js" type="text/javascript"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script type="text/javascript" src="http://glassboard.com/js-global/timer.js"></script>
+        <meta name="keywords" content="sepia labs, glassboard, privacy, group messaging, software, iphone, android, apps, iphone apps, android apps, windows phone 7, group sharing, private social network" />
+        <meta name="description" content="Glassboard." />
+        <script type="text/javascript">
+            $(function() {
+                var timeout = 1000;
+                var timer;
+
+                $("input[name=start]").click(function() {
+                    $("#console").append("<span style=\"color: #0F0\">Timer started.</span<br />");
+                    timer = $.timer(timeout, function() {
+                        $("#console").append("Timer completed.<br />");
+                    });
+                });
+
+                $("input[name=stop]").click(function() {
+                    $("#console").append("<span style=\"color: #F00\">Timer stopped.</span<br />");
+                    timer.stop();
+                });
+
+                $("input[name=reset]").click(function() {
+                    timer.stop();
+                    timeout = prompt("Reset timeout too:", 500);
+                    timer.reset(timeout);
+                    $("#console").append("<span style=\"color: #00F\">Timer reset.</span<br />");
+                });
+            });
+            </script>
+            <script type="text/javascript">
+            var quote_rotate = (function() {
+              var quotes = [
+                  {"quote": "&#34;Now I don’t know what I’d do without Glassboard.&#34;", "attribution": "John Gruber, Daring Fireball", "link": "http://daringfireball.net/linked/2012/05/15/glassboard-2"},
+                  {"quote": "&#34;Glassboard was so great at WWDC this year. At this point I don’t know how I did conferences without it.&#34;", "attribution": "Jacqui Cheng, Ars Technica", "link": "https://twitter.com/DaringFirefeed/status/217361141670756352"},
+                  {"quote": "&#34;The app was reliable and fast. Notifications and messages arrived at the same time (a feature others can’t match) and the app did not crash in a week of use.&#34;", "attribution": "Mike Hay, Black Pixel", "link": "http://glassboard.com/blog/2012/06/28/coordinate-and-organize-glassboard-at-wwdc/"},
+                  {"quote": "&#34;Private mobile content sharing for groups is something no one has really nailed yet, but feels like it could be a very big deal.&#34;", "attribution": "Marshall Kirkpatrick", "link": "http://www.readwriteweb.com/archives/glassboard_rock_star_team_regroups_from_rss-land_t.php"}
+              ];
+
+              var quoteindex = 0; // Current quote index
+              var fadetime = 1200; // Length of time to spend fading
+              var timerinterval = 10000; // How long to wait before changing the quote
+
+              function rotatequote() {
+                  quoteindex = (quoteindex + 1) % quotes.length;
+                  changequote_withfade(quoteindex);
+              }
+              function rotatequotereverse() {
+                  quoteindex = (quoteindex <= 0 ? quotes.length - 1 : quoteindex - 1);
+                  changequote_withfade(quoteindex);
+              }
+              function changequote_withfade(index) {
+                  $("#quoteblock-inner").fadeOut(fadetime, function() { changequote(quoteindex); })
+                    .fadeIn(fadetime);
+              }
+              function changequote(index) {
+                  $.each(quotes[index], function(tag, text) {
+                    $("#quoteblock-tag-" + tag).html(text);
+                  });
+              }
+
+              $(document).ready(function() {
+                  var quotetimer = $.timer(timerinterval, function() {
+                    rotatequote();
+                  });
+                  $("#quoteblock").click(function() {
+                    window.location = quotes[quoteindex].link;
+                    //quotetimer.stop();
+                    //rotatequote();
+                  });
+                  // Load the first quote
+                  changequote(quoteindex);
+              });
+            }());
+            </script>
+
+        <style type="text/css">
+          #quoteblock {
+              padding: 4px;
+              margin: 3px;
+             /* background: url("http://glassboard.com/paperTexture.png") repeat scroll 0 0 transparent;
+              border-radius: 12px 12px 12px 12px;
+              box-shadow: 0 0 10px white inset, 0 1px 3px rgba(0, 0, 0, 0.1);*/
+              padding-right: 10px;
+              position:relative;
+              cursor:pointer;
+              margin-top:-15px;
+              margin-bottom:10px;
+              height:auto;
+          }
+          #quoteblock-inner {
+              height:120px;
+          }
+          #quoteblock-tag-quote {
+              font-style: italic;
+              text-align: center;
+          }
+          #quoteblock-attribution {
+             text-align: right;
+             font-size: 80%;
+             margin-top: 5px;
+          }
+        </style>
+
+        <script>
+          !function(g,s,q,r,d){r=g[r]=g[r]||function(){(r.q=r.q||[]).push(
+          arguments)};d=s.createElement(q);q=s.getElementsByTagName(q)[0];
+          d.src='//d1l6p2sc9645hc.cloudfront.net/tracker.js';q.parentNode.
+          insertBefore(d,q)}(window,document,'script','_gs');
+
+          _gs('GSN-866845-U');
+        </script>
+	</head>
+	<body onload="setupZoom()">
+        <div id="bannerbackground">
+            <div id="navigation">
+                <div id="innernav">
+                    <a href="http://twitter.com/glassboard" id="twitterlink">Twitter</a>
+                    <a href="http://www.facebook.com/pages/Glassboard/215233918516446" id="facebooklink">Facebook</a>
+                    <a href="http://secondgearsoftware.com/blog/" id="bloglink">Blog</a>
+                    <a href="http://glassboard.com/privacy/">Privacy</a>
+                    <a href="http://glassboard.com/support/faqs.html">FAQ</a>
+                    <a href="http://glassboard.com/support">Support</a>
+                    <a href="http://glassboard.com/premium">Pricing</a>
+                </div>
+                <div style="display:inline-block;" id="applink">
+                <a href="https://app.glassboard.com/">
+                    <img id="loginbutton" style="margin-top:5px;vertical-align:bottom;" src="http://glassboard.com/loginbutton.png" />
+                </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="pagebox">
+
+					<div id="bannerbox">
+				<div id="banner"><a href="http://glassboard.com/"><img src="ribbon9.png" width="387" height="119" alt="Glassboard" /></a></div>
+				<p class="appdescription">Glassboard is a private social network for groups.<br /> <i>For <a href="http://itunes.apple.com/us/app/glassboard/id453661198?ls=1&mt=8">iPhone</a>, <a href="https://market.android.com/details?id=com.sepialabs.glassboard">Android</a>, <!---<a href="http://windowsphone.com/s?appid=e3bfa5f1-9401-472a-a686-177ea66f1d41">Windows Phone 7</a>,---> and now <a href="https://app.glassboard.com/">on the web</a>.</i></p>
+			</div>
+			<div id="contentsidebarbox">
+				<div id="content">
+					<h1>Know who you’re sharing with</h1>
+
+<div id="quoteblock">
+   <div id="quoteblock-inner">
+      <div id="quoteblock-tag-quote"></div>
+      <div id="quoteblock-attribution">–<span id="quoteblock-tag-attribution"></span></div>
+   </div>
+</div>
+					<p>Share messages, photos, videos, files and even locations with different groups: family, friends, co-workers, classmates, volunteers, and more.</p>
+					<h2>Share privately</h2>
+					<p>Glassboard has no privacy settings — because <i>everything</i> is private. It’s that easy.</p>
+					<p>And you never have to worry about the rules changing.</p>
+					<p>Share pictures of your family with <i>just</i> your family. Share with co-workers — get things done knowing your messages are confidential.</p>
+					<h2>Stay private</h2>
+					<p>Unlike Google, Facebook, and Twitter, we don’t mine your data to sell advertising. We don’t do ads.</p>
+					<!--<p>We even encrypt your messages in our database, for added privacy.</p>-->
+					<p><i>You</i> are our customer — not advertisers.</p>
+					<p>Get it now. For <a href="http://itunes.apple.com/us/app/glassboard/id453661198?ls=1&mt=8">iPhone</a>, <a href="https://market.android.com/details?id=com.sepialabs.glassboard">Android</a>, <!--- <a href="http://windowsphone.com/s?appid=e3bfa5f1-9401-472a-a686-177ea66f1d41">Windows Phone 7</a>,---> and <a href="https://app.glassboard.com/">on the web</a>. It’s free.</p>
+				</div>
+
+				<div id="sidebar">
+					<div id="innersidebar">
+						<div id="downloadbox" style="position:relative;">
+							<a href="https://app.glassboard.com/"><div style="height:165px;width:250px;position:relative;"></div></a>
+							<div style="position:absolute;">
+							<a href="http://itunes.apple.com/us/app/glassboard/id453661198?ls=1&mt=8" id="downloadiPhoneButton" class="downloadButton">&nbsp;</a>
+							<a href="https://market.android.com/details?id=com.sepialabs.glassboard" id="downloadAndroidButton" class="downloadButton">&nbsp;</a><!---
+							<a href="http://windowsphone.com/s?appid=e3bfa5f1-9401-472a-a686-177ea66f1d41" id="downloadWindowsButton" class="downloadButton">&nbsp;</a>--->
+							</div>
+						</div>
+					</div>
+					<div id="photobox">
+						<img src="example-picture2.png" height="400" alt="" />
+					</div>
+				</div>
+			</div>
+
+			<div id="screenshots">
+				<h4>Screen shots</h4> (click thumbnail to view)
+				<p>iPhone</p>
+				<a href="screenshots/iphone/iphone1.png"><img src="screenshots/iphone/iphone1_thumb.png" width="128" height="128" alt="iPhone screenshot" /></a>
+				<a href="screenshots/iphone/iphone2.png"><img src="screenshots/iphone/iphone2_thumb.png" width="128" height="128" alt="iPhone screenshot" /></a>
+				<a href="screenshots/iphone/iphone3.png"><img src="screenshots/iphone/iphone3_thumb.png" width="128" height="128" alt="iPhone screenshot" /></a>
+				<!---<a href="screenshots/iphone/iphone4.png"><img src="screenshots/iphone/iphone4_thumb.png" width="128" height="128" alt="iPhone screenshot" /></a>--->
+				<p>Android</p>
+				<a href="screenshots/android/android1.png"><img src="screenshots/android/android1_thumb.png" width="128" height="128" alt="Android screenshot" /></a>
+				<a href="screenshots/android/android2.png"><img src="screenshots/android/android2_thumb.png" width="128" height="128" alt="Android screenshot" /></a>
+				<a href="screenshots/android/android3.png"><img src="screenshots/android/android3_thumb.png" width="128" height="128" alt="Android screenshot" /></a>
+				<!---<a href="screenshots/android/android4.png"><img src="screenshots/android/android4_thumb.png" width="128" height="128" alt="Android screenshot" /></a>---><!---
+				<p>Windows Phone 7</p>
+				<a href="screenshots/windows/windows1.png"><img src="screenshots/windows/windows1_thumb.png" width="128" height="128" alt="Windows screenshot" /></a>
+				<a href="screenshots/windows/windows2.png"><img src="screenshots/windows/windows2_thumb.png" width="128" height="128" alt="Windows screenshot" /></a>
+				<a href="screenshots/windows/windows3.png"><img src="screenshots/windows/windows3_thumb.png" width="128" height="128" alt="Windows screenshot" /></a>
+				<a href="screenshots/windows/windows4.png"><img src="screenshots/windows/windows4_thumb.png" width="128" height="128" alt="Windows screenshot" /></a>--->
+			</div>
+
+        		</div> <!-- pagebox -->
+
+		<!--<div class="border"></div>-->
+
+		<div id="footer">
+			<div id="copyright">
+				Copyright &copy; 2011<script language="JavaScript">var d=new Date(); yr=d.getFullYear(); if (yr!=2011) document.write("-"+yr);</script> <a href="http://sepialabs.com">&nbsp;Sepia Labs</a>
+			</div>
+		</div>
+
+	</body>
+</html>
+
+	</body>
+</html>

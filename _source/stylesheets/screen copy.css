@@ -1,0 +1,735 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* line 20, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+body {
+  line-height: 1;
+}
+
+/* line 22, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 24, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 26, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 28, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 101, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 30, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 114, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/*border*/
+/* line 30, ../sass/screen.scss */
+body {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  line-height: 1.65em;
+  font-family: Georgia, Times, serif;
+  font-size: 18px;
+  color: #333333;
+  background-color: #e2e2e2;
+  background: url("../texturedBackground.png");
+}
+
+/* line 42, ../sass/screen.scss */
+p {
+  margin-bottom: 28px;
+}
+
+/* line 45, ../sass/screen.scss */
+em {
+  font-style: italic;
+}
+
+/* line 48, ../sass/screen.scss */
+a {
+  text-decoration: none;
+  -moz-transition-property: color;
+  -webkit-transition-property: color;
+  -o-transition-property: color;
+  transition-property: color;
+  -moz-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -moz-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+
+/* line 52, ../sass/screen.scss */
+a:link {
+  color: #0b8fe2;
+  -moz-transition-property: color;
+  -webkit-transition-property: color;
+  -o-transition-property: color;
+  transition-property: color;
+  -moz-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -moz-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+
+/* line 56, ../sass/screen.scss */
+a:visited {
+  color: #85aa45;
+  -moz-transition-property: color;
+  -webkit-transition-property: color;
+  -o-transition-property: color;
+  transition-property: color;
+  -moz-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -moz-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+
+/* line 60, ../sass/screen.scss */
+a:hover {
+  color: #22a3f4;
+}
+
+/* line 63, ../sass/screen.scss */
+ul {
+  list-style: disc inside none;
+}
+
+/* line 66, ../sass/screen.scss */
+li {
+  margin-left: 38px;
+}
+
+/* line 69, ../sass/screen.scss */
+.emphatic {
+  font-weight: bold;
+}
+
+/* line 72, ../sass/screen.scss */
+.floatRight {
+  float: right;
+  margin-left: 0.5em;
+}
+
+/* line 76, ../sass/screen.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  font-family: "Myriad Web Pro", "Myriad Pro", Helvetica, Arial, sans-serif;
+  margin-bottom: 28px;
+}
+
+/* line 81, ../sass/screen.scss */
+h1 {
+  font-size: 32px;
+  color: #85aa45;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 1024px) {
+  /* line 81, ../sass/screen.scss */
+  h1 {
+    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+  }
+}
+
+/* line 89, ../sass/screen.scss */
+h2 {
+  font-size: 24px;
+  #text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* line 93, ../sass/screen.scss */
+h3 {
+  font-size: 22px;
+}
+
+/* line 96, ../sass/screen.scss */
+.border {
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid white;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* line 103, ../sass/screen.scss */
+i {
+  font-style: italic;
+}
+
+/*Banner*/
+/* line 109, ../sass/screen.scss */
+#bannerbackground {
+  height: 38px;
+  min-height: 38px;
+  max-height: 38px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid #c6c6c4;
+  box-shadow: inset 0px -1px 1px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+/* line 118, ../sass/screen.scss */
+#bannerbox {
+  padding: 0px;
+  padding-top: 60px;
+  width: 987px;
+  margin: auto;
+}
+@media (max-width: 1000px) {
+  /* line 118, ../sass/screen.scss */
+  #bannerbox {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+/* line 128, ../sass/screen.scss */
+#banner {
+  padding: 0px;
+  padding-left: 38px;
+  margin: 0px;
+  display: table-cell;
+}
+@media (max-width: 1000px) {
+  /* line 128, ../sass/screen.scss */
+  #banner {
+    display: block;
+    padding-left: 0px;
+  }
+}
+
+@media (max-width: 420px) {
+  /* line 138, ../sass/screen.scss */
+  #banner img {
+    height: 91px;
+    width: 297px;
+  }
+}
+
+/* line 144, ../sass/screen.scss */
+.appdescription {
+  color: #3d4047;
+  color: #787e8b;
+  display: table-cell;
+  top: 00px;
+  text-align: left;
+  vertical-align: top;
+  padding-top: 20px;
+  padding-left: 27px;
+  font-size: 25px;
+  line-height: 1.4em;
+}
+@media (max-width: 1000px) {
+  /* line 144, ../sass/screen.scss */
+  .appdescription {
+    display: block;
+    text-align: center;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+
+/* line 162, ../sass/screen.scss */
+.appdescription a:link, .appdescription a:visited {
+  color: #0b8fe2;
+}
+
+/*Navigation*/
+/* line 168, ../sass/screen.scss */
+#navigation {
+  font-family: "Myriad Web Pro", "Myriad Pro", Helvetica, Arial, sans-serif;
+  padding-top: 6px;
+  margin: auto;
+  text-align: center;
+}
+
+/* line 174, ../sass/screen.scss */
+#navigation a {
+  padding-right: 55px;
+  text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.5);
+}
+
+/* line 178, ../sass/screen.scss */
+#navigation a:last-child {
+  padding: 0px;
+}
+
+/* line 181, ../sass/screen.scss */
+#navigation a:link, #navigation a:visited {
+  color: #787e8b;
+  text-shadow: 0px 0px 5px white;
+}
+
+/* line 185, ../sass/screen.scss */
+#navigation a:hover {
+  color: #0b8fe2;
+}
+
+@media (max-width: 650px) {
+  /* line 188, ../sass/screen.scss */
+  #facebooklink {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  /* line 193, ../sass/screen.scss */
+  #twitterlink {
+    display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  /* line 198, ../sass/screen.scss */
+  #bloglink {
+    display: none;
+  }
+}
+
+/*Content*/
+/* line 206, ../sass/screen.scss */
+#pagebox {
+  margin: 0px;
+  color: #444;
+  height: 100%;
+  padding-bottom: 1em;
+  text-align: center;
+  background: url("../paperTexture.png");
+  text-align: center;
+}
+
+/* line 215, ../sass/screen.scss */
+#contentsidebarbox {
+  margin: auto;
+  margin-top: 2.5em;
+  margin-bottom: 2em;
+  width: 987px;
+  background-color: rgba(255, 255, 255, 0.4);
+  box-shadow: inset 0px 0px 10px white, 0px 1px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+@media (max-width: 1000px) {
+  /* line 215, ../sass/screen.scss */
+  #contentsidebarbox {
+    width: 100%;
+    border-radius: 0px;
+  }
+}
+
+/* line 228, ../sass/screen.scss */
+#content {
+  display: table-cell;
+  text-align: left;
+  max-width: 549px;
+  min-width: 549px;
+  width: 549px;
+  margin: auto;
+  padding-top: 38px;
+  color: #555;
+  #padding-bottom: 1em;
+  padding-right: 90px;
+  padding-left: 38px;
+  border-radius: 2px;
+}
+@media (max-width: 950px) {
+  /* line 228, ../sass/screen.scss */
+  #content {
+    #display: block;
+    padding-right: 0px;
+  }
+}
+@media (max-width: 840px) {
+  /* line 228, ../sass/screen.scss */
+  #content {
+    display: block;
+  }
+}
+@media (max-width: 600px) {
+  /* line 228, ../sass/screen.scss */
+  #content {
+    padding-left: 8px;
+    padding-right: 8px;
+    min-width: 420px;
+    max-width: 420px;
+    width: 420px;
+  }
+}
+@media (max-width: 420px) {
+  /* line 228, ../sass/screen.scss */
+  #content {
+    min-width: 300px;
+    max-width: 300px;
+    width: 300px;
+  }
+}
+
+/* line 261, ../sass/screen.scss */
+#content p:last-child {
+  #border-bottom: 1px dotted #af451a;
+}
+
+/* line 264, ../sass/screen.scss */
+#pagecontent {
+  text-align: left;
+  width: 987px;
+  #background-color: blue;
+  margin: auto;
+  padding-left: 73px;
+  padding-top: 42px;
+  #border-top: 1px dotted #ccc;
+}
+
+/* line 273, ../sass/screen.scss */
+#standardbanner {
+  text-align: center;
+  padding-top: 60px;
+}
+
+/* line 277, ../sass/screen.scss */
+#standardpagecontent {
+  text-align: left;
+  margin: auto;
+  width: 608px;
+  padding-top: 47px;
+  padding-left: 38px;
+  padding-right: 38px;
+  padding-bottom: 38px;
+}
+@media (max-width: 700px) {
+  /* line 277, ../sass/screen.scss */
+  #standardpagecontent {
+    width: 75%;
+  }
+}
+
+/* line 289, ../sass/screen.scss */
+#standardpagecontent h1 {
+  color: #af451a;
+  color: #555;
+  font-size: 2.5em;
+  padding-bottom: 18px;
+  line-height: 1em;
+}
+
+/* line 296, ../sass/screen.scss */
+#standardpagecontent h2, #standardpagecontent h3, #standardpagecontent h4, #standardpagecontent p {
+  margin-bottom: 18px;
+}
+
+/*Sidebar*/
+/* line 302, ../sass/screen.scss */
+#sidebar {
+  display: table-cell;
+  vertical-align: top;
+  background-color: rgba(0, 0, 0, 0.02);
+  box-shadow: inset 0px 0px 9px white;
+  box-shadow: inset 0px 0px 4px white;
+  border-left: 1px solid #e6e6e6;
+  border-right: 1px solid #e6e6e6;
+  width: 270px;
+  max-width: 270px;
+  #background-color: blue;
+}
+@media (max-width: 950px) {
+  /* line 302, ../sass/screen.scss */
+  #sidebar {
+    background-color: transparent;
+    border-left: 0px solid white;
+    border-right: 0px solid white;
+  }
+}
+@media (max-width: 840px) {
+  /* line 302, ../sass/screen.scss */
+  #sidebar {
+    max-width: 100%;
+    width: 100%;
+    display: block;
+    #background-color: red;
+  }
+}
+
+/* line 325, ../sass/screen.scss */
+#innersidebar {
+  margin-left: 19px;
+  width: 254px;
+  height: 100%;
+}
+@media (max-width: 950px) {
+  /* line 325, ../sass/screen.scss */
+  #innersidebar {
+    margin-left: 0px;
+  }
+}
+@media (max-width: 840px) {
+  /* line 325, ../sass/screen.scss */
+  #innersidebar {
+    width: 100%;
+    #background-color: blue;
+    height: 262px;
+  }
+}
+
+/* line 338, ../sass/screen.scss */
+#downloadbox {
+  width: 236px;
+  -webkit-transform: translateY(-36px);
+  -moz-transform: translateY(-36px);
+  transform: translateY(-36px);
+  height: 353px;
+  background: url("../marketlinksbackground4.png");
+  font-family: "Myriad Web Pro", "Myriad Pro", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+}
+@media (max-width: 840px) {
+  /* line 338, ../sass/screen.scss */
+  #downloadbox {
+    padding-top: 2px;
+    background: transparent;
+    width: 100%;
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    transform: translateY(0px);
+    text-align: center;
+  }
+}
+
+/* line 357, ../sass/screen.scss */
+#downloadbox a, #downloadbox a:link, #downloadbox a:visited {
+  color: white;
+  font-weight: bold;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
+  text-align: left;
+  padding-left: 55px;
+  line-height: 1.2em;
+  padding-top: 11px;
+}
+@media (max-width: 840px) {
+  /* line 357, ../sass/screen.scss */
+  #downloadbox a, #downloadbox a:link, #downloadbox a:visited {
+    #display: inline-block;
+    padding-left: 0px;
+  }
+}
+
+/* line 370, ../sass/screen.scss */
+.downloadButton {
+  display: block;
+  height: 68px;
+  width: 195px;
+}
+@media (max-width: 840px) {
+  /* line 370, ../sass/screen.scss */
+  .downloadButton {
+    text-align: center;
+  }
+}
+
+/* line 378, ../sass/screen.scss */
+#downloadAndroidButton {
+  background: url("../downloadAndroidButton.png");
+  background-repeat: no-repeat;
+  position: relative;
+  top: 141px;
+  left: 19px;
+}
+@media (max-width: 840px) {
+  /* line 378, ../sass/screen.scss */
+  #downloadAndroidButton {
+    position: static;
+    top: 0px;
+    left: 0px;
+    margin: auto;
+  }
+}
+
+/* line 391, ../sass/screen.scss */
+#downloadWindowsButton {
+  background: url("../downloadWindowsButton.png");
+  background-repeat: no-repeat;
+  position: relative;
+  top: 141px;
+  left: 19px;
+}
+@media (max-width: 840px) {
+  /* line 391, ../sass/screen.scss */
+  #downloadWindowsButton {
+    position: static;
+    top: 0px;
+    left: 0px;
+    margin: auto;
+  }
+}
+
+/* line 404, ../sass/screen.scss */
+#downloadiPhoneButton {
+  background: url("../downloadiPhoneButton.png");
+  background-repeat: no-repeat;
+  position: relative;
+  top: 141px;
+  left: 19px;
+}
+@media (max-width: 840px) {
+  /* line 404, ../sass/screen.scss */
+  #downloadiPhoneButton {
+    position: static;
+    top: 0px;
+    left: 0px;
+    margin: auto;
+  }
+}
+
+/* line 417, ../sass/screen.scss */
+#photobox {
+  position: relative;
+  left: -140px;
+  top: 36px;
+}
+@media (max-width: 1150px) {
+  /* line 417, ../sass/screen.scss */
+  #photobox {
+    display: none;
+  }
+}
+
+/* line 425, ../sass/screen.scss */
+#photobox img {
+  #-webkit-transform: translate(-140px, 36px);
+  #-moz-transform: translate(-140px, 36px);
+  #transform: translate(-140px, 36px);
+  #background-color: orange;
+}
+
+/*Screen shots*/
+/* line 434, ../sass/screen.scss */
+#screenshots {
+  margin-top: 4em;
+  margin-bottom: 2em;
+}
+@media (max-width: 840px) {
+  /* line 434, ../sass/screen.scss */
+  #screenshots {
+    width: 420px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-width: 420px) {
+  /* line 434, ../sass/screen.scss */
+  #screenshots {
+    width: 280px;
+  }
+}
+
+/* line 447, ../sass/screen.scss */
+#screenshots a {
+  display: inline-block;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+/* line 452, ../sass/screen.scss */
+#screenshots img {
+  border: 1px solid black;
+  box-shadow: inset 0px 1px 1px red, 0px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* line 458, ../sass/screen.scss */
+#screenshots p {
+  margin-top: 2em;
+}
+
+/* line 461, ../sass/screen.scss */
+#screenshots h4 {
+  display: inline;
+}
+
+/*Footer - navigation*/
+/* line 467, ../sass/screen.scss */
+#footer {
+  padding-bottom: 30px;
+  padding-top: 31px;
+  margin: 0px;
+  font-family: "Myriad Web Pro", "Myriad Pro", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  text-shadow: 0px 1px 1px white;
+  text-align: center;
+  #background: url("../curvedShadowInverted.png");
+  #background-repeat: no-repeat;
+  #background-position: center top;
+  border-top: 1px solid #c6c6c4;
+  box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* line 481, ../sass/screen.scss */
+#footer a:link, #footer a:visited {
+  color: #0976bb;
+}
+
+/* line 484, ../sass/screen.scss */
+#footer a:hover {
+  color: #2ba7f5;
+}
+
+/* line 487, ../sass/screen.scss */
+#copyright {
+  #margin-top: 1em;
+}

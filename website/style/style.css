@@ -1,0 +1,153 @@
+body
+{
+	font-family: helvetica, verdana, arial, sans-serif;
+	color: #242629;
+	background-color: #595d64;
+	background-image:url('http://glassboard.com/images/backgrounddenim.png');
+}
+
+a:active, a:visited, a:link
+{
+	color: #596F9E;
+	text-decoration: none;
+}
+
+a:hover
+{
+	color: #7997D7;
+	text-decoration: none;
+}
+          
+#header
+{
+	background-image:url('http://glassboard.com/images/navbar.png');
+	height:90px;
+	width:900px;
+	margin: 20px auto -1px auto; 
+	
+}
+
+#header-left
+{
+	width: 300px;
+	padding: 15px 10px;
+	margin-left:20px;
+	text-align: left;
+    float:left;
+}
+
+#header-right
+{
+	width: 420px;
+	padding: 5px 10px;
+	margin-right:50px;
+	margin-top:30px;
+	text-align: right;
+    float:right;
+}
+#menu_button
+{
+	width:100px;
+	float:right;
+}
+
+#content
+{
+	width:900px;
+	margin: 20px auto -1px auto; 
+}
+
+#content_main
+{
+    width:845px;
+}
+
+#bodyheader
+{
+	height:108px;
+	background-image:url('http://glassboard.com/images/headerbackground.png');
+}
+
+#innercontent
+{
+	padding:1px;
+	padding-left:30px;
+	padding-bottom:10px;
+	background-image:url('http://glassboard.com/images/body_background.png');
+	background-repeat:repeat-y;
+ }
+
+ #videocontainer {
+ 	border:1px solid black;
+	height:240px;
+	width:320px;
+	padding: 5px 10px;
+	margin-right:50px;
+    float:right;
+ 
+}
+ 
+#lcontainer
+{
+	width: 360px;
+	margin-left:50px;
+    float:left;
+}
+
+#rcontainer
+{
+	width: 360px;
+	height:310px;
+	margin-right:50px;
+    float:right;
+}
+
+#footer-right
+{
+	float:right;
+	margin-right:30px;
+	height:10px;
+}
+#footer-left
+{
+	float:left;
+    margin-left:28px;
+	height:10px;
+}
+  
+.imglink
+{
+	border:none;
+}
+
+#imgheader
+{
+	padding:20px 10px 0px 30px;
+	float:left;
+	width:75px;
+}
+#titleheader
+{
+	margin-top:20px;
+	width:777px;
+	height:80px;
+	float:right;
+	text-align:left;
+}
+
+#footercontainer
+{
+    height:10px;
+    background:url('http://glassboard.com/images/body_background.png');
+    background-repeat:repeat-y;"
+}
+
+#bodyfooter
+{
+	height:28px;
+	background-image:url('http://glassboard.com/images/footerbackground.png');
+}
+.insettype
+{
+	text-shadow: #7997D7 1px 1px 1px;
+}
