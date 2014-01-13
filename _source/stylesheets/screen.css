@@ -550,8 +550,10 @@ i {
 }
 
 #downloadAndroidButton {
-  background: url("../images/play_store_badge.png");
+  background: url("/images/play_store_badge.png");
   background-repeat: no-repeat;
+
+  background-size: 172px 60px;
   position: relative;
   left: 19px;
 }
@@ -565,11 +567,10 @@ i {
 }
 
 #downloadiPhoneButton {
-  background: url("../images/app_store_badge.png");
+  background: url("/images/app_store_badge.png");
   background-repeat: no-repeat;
   background-size: 172px 60px;
   position: relative;
- /* top: 141px; */
   left: 19px;
 }
 @media (max-width: 840px) {
