@@ -582,8 +582,9 @@ i {
 }
 
 #downloadiPhoneButton {
-  background: url("../images/app_store_badge.svg");
+  background: url("../images/app_store_badge.png");
   background-repeat: no-repeat;
+  background-size: 172px 60px;
   position: relative;
  /* top: 141px; */
   left: 19px;
