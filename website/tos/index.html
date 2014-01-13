@@ -1,127 +1,125 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
-        <base href="http://glassboard.com/" />
+    <base href="http://www.glassboard.com">
+    <meta charset="utf-8" />
 		<title> Glassboard - Terms of Service |  Glassboard - Know who you're sharing with.
 </title>
-        <meta name="MSSmartTagsPreventParsing" content="true" />
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta name="viewport" content="width=device-width" />
-        <link href="stylesheets/screen.css" rel="stylesheet" type="text/css" />
-        <script type="text/javascript"> </script> <!-- FOUC hack: http://www.bluerobot.com/web/css/fouc.asp -->
-        <script src="js-global/FancyZoom.js" type="text/javascript"></script>
-        <script src="js-global/FancyZoomHTML.js" type="text/javascript"></script>
-        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-        <script type="text/javascript" src="http://glassboard.com/js-global/timer.js"></script>
-        <meta name="keywords" content="second gear, sepia labs, glassboard, privacy, group messaging, software, iphone, android, apps, iphone apps, android apps, windows phone 7, group sharing, private social network" />
-        <meta name="description" content="Glassboard." />
-        <script type="text/javascript">
-            $(function() {
-                var timeout = 1000;
-                var timer;
+    <link rel="shortcut icon" href="/images/favicon.ico?v=002" />
 
-                $("input[name=start]").click(function() {
-                    $("#console").append("<span style=\"color: #0F0\">Timer started.</span<br />");
-                    timer = $.timer(timeout, function() {
-                        $("#console").append("Timer completed.<br />");
-                    });
-                });
+    <meta name="viewport" content="width=device-width" />
+    <link href="/stylesheets/screen.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript"> </script> <!-- FOUC hack: http://www.bluerobot.com/web/css/fouc.asp -->
+    <script src="/js-global/FancyZoom.js" type="text/javascript"></script>
+    <script src="/js-global/FancyZoomHTML.js" type="text/javascript"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="http://glassboard.com/js-global/timer.js"></script>
+    <meta name="keywords" content="second gear, sepia labs, glassboard, privacy, group messaging, software, iphone, android, apps, iphone apps, android apps, group sharing, private social network" />
+    <meta name="description" content="Glassboard." />
+    <script type="text/javascript">
+        $(function() {
+            var timeout = 1000;
+            var timer;
 
-                $("input[name=stop]").click(function() {
-                    $("#console").append("<span style=\"color: #F00\">Timer stopped.</span<br />");
-                    timer.stop();
-                });
-
-                $("input[name=reset]").click(function() {
-                    timer.stop();
-                    timeout = prompt("Reset timeout too:", 500);
-                    timer.reset(timeout);
-                    $("#console").append("<span style=\"color: #00F\">Timer reset.</span<br />");
+            $("input[name=start]").click(function() {
+                $("#console").append("<span style=\"color: #0F0\">Timer started.</span<br />");
+                timer = $.timer(timeout, function() {
+                    $("#console").append("Timer completed.<br />");
                 });
             });
-            </script>
-            <script type="text/javascript">
-            var quote_rotate = (function() {
-              var quotes = [
-                  {"quote": "&#34;Now I don’t know what I’d do without Glassboard.&#34;", "attribution": "John Gruber, Daring Fireball", "link": "http://daringfireball.net/linked/2012/05/15/glassboard-2"},
-                  {"quote": "&#34;Glassboard was so great at WWDC this year. At this point I don’t know how I did conferences without it.&#34;", "attribution": "Jacqui Cheng, Ars Technica", "link": "https://twitter.com/DaringFirefeed/status/217361141670756352"},
-                  {"quote": "&#34;The app was reliable and fast. Notifications and messages arrived at the same time (a feature others can’t match) and the app did not crash in a week of use.&#34;", "attribution": "Mike Hay, Black Pixel", "link": "http://glassboard.com/blog/2012/06/28/coordinate-and-organize-glassboard-at-wwdc/"},
-                  {"quote": "&#34;Private mobile content sharing for groups is something no one has really nailed yet, but feels like it could be a very big deal.&#34;", "attribution": "Marshall Kirkpatrick", "link": "http://www.readwriteweb.com/archives/glassboard_rock_star_team_regroups_from_rss-land_t.php"}
-              ];
 
-              var quoteindex = 0; // Current quote index
-              var fadetime = 1200; // Length of time to spend fading
-              var timerinterval = 10000; // How long to wait before changing the quote
+            $("input[name=stop]").click(function() {
+                $("#console").append("<span style=\"color: #F00\">Timer stopped.</span<br />");
+                timer.stop();
+            });
 
-              function rotatequote() {
-                  quoteindex = (quoteindex + 1) % quotes.length;
-                  changequote_withfade(quoteindex);
-              }
-              function rotatequotereverse() {
-                  quoteindex = (quoteindex <= 0 ? quotes.length - 1 : quoteindex - 1);
-                  changequote_withfade(quoteindex);
-              }
-              function changequote_withfade(index) {
-                  $("#quoteblock-inner").fadeOut(fadetime, function() { changequote(quoteindex); })
-                    .fadeIn(fadetime);
-              }
-              function changequote(index) {
-                  $.each(quotes[index], function(tag, text) {
-                    $("#quoteblock-tag-" + tag).html(text);
-                  });
-              }
-
-              $(document).ready(function() {
-                  var quotetimer = $.timer(timerinterval, function() {
-                    rotatequote();
-                  });
-                  $("#quoteblock").click(function() {
-                    window.location = quotes[quoteindex].link;
-                    //quotetimer.stop();
-                    //rotatequote();
-                  });
-                  // Load the first quote
-                  changequote(quoteindex);
-              });
-            }());
-            </script>
-
-        <style type="text/css">
-          #quoteblock {
-              padding: 4px;
-              margin: 3px;
-             /* background: url("http://glassboard.com/paperTexture.png") repeat scroll 0 0 transparent;
-              border-radius: 12px 12px 12px 12px;
-              box-shadow: 0 0 10px white inset, 0 1px 3px rgba(0, 0, 0, 0.1);*/
-              padding-right: 10px;
-              position:relative;
-              cursor:pointer;
-              margin-top:-15px;
-              margin-bottom:10px;
-              height:auto;
-          }
-          #quoteblock-inner {
-              height:120px;
-          }
-          #quoteblock-tag-quote {
-              font-style: italic;
-              text-align: center;
-          }
-          #quoteblock-attribution {
-             text-align: right;
-             font-size: 80%;
-             margin-top: 5px;
-          }
-        </style>
-
-        <script>
-          !function(g,s,q,r,d){r=g[r]=g[r]||function(){(r.q=r.q||[]).push(
-          arguments)};d=s.createElement(q);q=s.getElementsByTagName(q)[0];
-          d.src='//d1l6p2sc9645hc.cloudfront.net/tracker.js';q.parentNode.
-          insertBefore(d,q)}(window,document,'script','_gs');
-
-          _gs('GSN-866845-U');
+            $("input[name=reset]").click(function() {
+                timer.stop();
+                timeout = prompt("Reset timeout too:", 500);
+                timer.reset(timeout);
+                $("#console").append("<span style=\"color: #00F\">Timer reset.</span<br />");
+            });
+        });
         </script>
+        <script type="text/javascript">
+        var quote_rotate = (function() {
+          var quotes = [
+              {"quote": "&#34;Now I don’t know what I’d do without Glassboard.&#34;", "attribution": "John Gruber, Daring Fireball", "link": "http://daringfireball.net/linked/2012/05/15/glassboard-2"},
+              {"quote": "&#34;Glassboard was so great at WWDC this year. At this point I don’t know how I did conferences without it.&#34;", "attribution": "Jacqui Cheng, Ars Technica", "link": "https://twitter.com/DaringFirefeed/status/217361141670756352"},
+              {"quote": "&#34;The app was reliable and fast. Notifications and messages arrived at the same time (a feature others can’t match) and the app did not crash in a week of use.&#34;", "attribution": "Mike Hay, Black Pixel", "link": "http://glassboard.com/blog/2012/06/28/coordinate-and-organize-glassboard-at-wwdc/"},
+              {"quote": "&#34;Private mobile content sharing for groups is something no one has really nailed yet, but feels like it could be a very big deal.&#34;", "attribution": "Marshall Kirkpatrick", "link": "http://www.readwriteweb.com/archives/glassboard_rock_star_team_regroups_from_rss-land_t.php"}
+          ];
+
+          var quoteindex = 0; // Current quote index
+          var fadetime = 1200; // Length of time to spend fading
+          var timerinterval = 10000; // How long to wait before changing the quote
+
+          function rotatequote() {
+              quoteindex = (quoteindex + 1) % quotes.length;
+              changequote_withfade(quoteindex);
+          }
+          function rotatequotereverse() {
+              quoteindex = (quoteindex <= 0 ? quotes.length - 1 : quoteindex - 1);
+              changequote_withfade(quoteindex);
+          }
+          function changequote_withfade(index) {
+              $("#quoteblock-inner").fadeOut(fadetime, function() { changequote(quoteindex); })
+                .fadeIn(fadetime);
+          }
+          function changequote(index) {
+              $.each(quotes[index], function(tag, text) {
+                $("#quoteblock-tag-" + tag).html(text);
+              });
+          }
+
+          $(document).ready(function() {
+              var quotetimer = $.timer(timerinterval, function() {
+                rotatequote();
+              });
+              $("#quoteblock").click(function() {
+                window.location = quotes[quoteindex].link;
+                //quotetimer.stop();
+                //rotatequote();
+              });
+              // Load the first quote
+              changequote(quoteindex);
+          });
+        }());
+        </script>
+
+    <style type="text/css">
+      #quoteblock {
+          padding: 4px;
+          margin: 3px;
+          padding-right: 10px;
+          position:relative;
+          cursor:pointer;
+          margin-top:-15px;
+          margin-bottom:10px;
+          height:auto;
+      }
+      #quoteblock-inner {
+          height:120px;
+      }
+      #quoteblock-tag-quote {
+          font-style: italic;
+          text-align: center;
+      }
+      #quoteblock-attribution {
+         text-align: right;
+         font-size: 80%;
+         margin-top: 5px;
+      }
+    </style>
+
+    <script>
+      !function(g,s,q,r,d){r=g[r]=g[r]||function(){(r.q=r.q||[]).push(
+      arguments)};d=s.createElement(q);q=s.getElementsByTagName(q)[0];
+      d.src='//d1l6p2sc9645hc.cloudfront.net/tracker.js';q.parentNode.
+      insertBefore(d,q)}(window,document,'script','_gs');
+
+      _gs('GSN-866845-U');
+    </script>
 	</head>
 	<body onload="setupZoom()">
         <div id="bannerbackground">
@@ -130,10 +128,10 @@
                     <a href="http://twitter.com/glassboard" id="twitterlink">Twitter</a>
                     <a href="http://www.facebook.com/pages/Glassboard/215233918516446" id="facebooklink">Facebook</a>
                     <a href="http://secondgearsoftware.com/blog/" id="bloglink">Blog</a>
-                    <a href="http://glassboard.com/privacy/">Privacy</a>
-                    <a href="http://glassboard.com/support/faqs.html">FAQ</a>
-                    <a href="http://glassboard.com/support">Support</a>
-                    <a href="http://glassboard.com/premium">Pricing</a>
+                    <a href="/privacy/">Privacy</a>
+                    <a href="/support/faqs.html">FAQ</a>
+                    <a href="/support">Support</a>
+                    <a href="/premium">Pricing</a>
                 </div>
                 <div style="display:inline-block;" id="applink">
                 <a href="https://app.glassboard.com/">
