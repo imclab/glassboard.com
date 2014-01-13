@@ -539,7 +539,7 @@ i {
 }
 
 #downloadiPhoneButton {
-  background: url("../downloadiPhoneButton.png");
+  background: url("../app_store_badge.svg");
   background-repeat: no-repeat;
   position: relative;
   top: 141px;

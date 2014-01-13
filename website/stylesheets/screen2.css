@@ -400,7 +400,7 @@ i {
     width: 297px;
   }
 }
- 
+
 #standardpagecontent {
   text-align: left;
   margin: auto;
@@ -557,7 +557,7 @@ i {
 }
 
 #downloadiPhoneButton {
-  background: url("../downloadiPhoneButton.png");
+  background: url("../images/app_store_badge.svg");
   background-repeat: no-repeat;
   position: relative;
  /* top: 141px; */

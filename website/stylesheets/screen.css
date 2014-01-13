@@ -245,7 +245,7 @@ i {
   display:inline-block;
   padding-right:40px;
   }
-  
+
 @media (max-width: 480px) {
   #innernav {padding-right:5px; }
  }
@@ -413,7 +413,7 @@ i {
     width: 297px;
   }
 }
- 
+
 #standardpagecontent {
   text-align: left;
   margin: auto;
@@ -436,7 +436,7 @@ i {
 @media (max-width:480px) {
 #premiumscreenshots {display:none;}
  }
- 
+
  @media (max-width:480px) {
 #premiumtable {width:75%}
  }
@@ -582,7 +582,7 @@ i {
 }
 
 #downloadiPhoneButton {
-  background: url("../downloadiPhoneButton.png");
+  background: url("../images/app_store_badge.svg");
   background-repeat: no-repeat;
   position: relative;
  /* top: 141px; */
