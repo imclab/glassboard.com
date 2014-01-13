@@ -550,30 +550,13 @@ i {
 }
 
 #downloadAndroidButton {
-  background: url("../downloadAndroidButton.png");
+  background: url("../images/play_store_badge.png");
   background-repeat: no-repeat;
   position: relative;
- /* top: 141px; */
   left: 19px;
 }
 @media (max-width: 840px) {
   #downloadAndroidButton {
-    position: static;
-    top: 0px;
-    left: 0px;
-    margin: auto;
-  }
-}
-
-#downloadWindowsButton {
-  background: url("../downloadWindowsButton.png");
-  background-repeat: no-repeat;
-  position: relative;
- /* top: 141px; */
-  left: 19px;
-}
-@media (max-width: 840px) {
-  #downloadWindowsButton {
     position: static;
     top: 0px;
     left: 0px;
