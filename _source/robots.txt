@@ -1,2 +1,7 @@
 User-agent: *
-Disallow:
+Disallow: /cgi-bin/
+Disallow: /images/
+Disallow: /refer/
+Disallow: /templates/
+Disallow: /css/
+Disallow: /private/

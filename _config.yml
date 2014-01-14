@@ -7,3 +7,6 @@ exclude: [server, misc]
 plugins:     _source/_plugins
 source:      _source
 destination: website
+
+gems:
+    - jekyll-compass
