@@ -1,0 +1,662 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, caption, tbody, tfoot, thead, th,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+body {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  line-height: 1.65em;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 18px;
+  color: #333333;
+  background-color: #fff;
+}
+
+p {
+  margin-bottom: 28px;
+}
+
+em {
+  font-style: italic;
+}
+
+a {
+  text-decoration: none;
+  -moz-transition-property: color;
+  -webkit-transition-property: color;
+  -o-transition-property: color;
+  transition-property: color;
+  -moz-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -moz-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+
+a:link {
+  color: #0b8fe2;
+}
+
+a:visited {
+  color: #85aa45;
+}
+
+a:hover {
+  color: #22a3f4;
+}
+
+ul {
+ /* list-style: disc inside none;*/
+ list-style: disc outside none;
+}
+
+li {
+  margin-left: 38px;
+}
+
+.emphatic {
+  font-weight: bold;
+}
+
+.floatRight {
+  float: right;
+  margin-left: 0.5em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  /*font-family: "Myriad Web Pro", "Myriad Pro", Helvetica, Arial, sans-serif;*/
+  margin-bottom: 28px;
+}
+
+h1 {
+  font-size: 32px;
+  color: #85aa45;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 1024px) {
+  h1 {
+    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+  }
+}
+
+h2 {
+  font-size: 24px;
+  #text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+h3 {
+  font-size: 22px;
+}
+
+.border {
+  height: 1px;
+  /*background-color: rgba(0, 0, 0, 0.1);*/
+  /*border-bottom: 1px solid white;*/
+  margin: 0px;
+  padding: 0px;
+}
+
+i {
+  font-style: italic;
+}
+
+/*Banner*/
+#bannerbackground {
+  height: 36px;
+  min-height: 36px;
+  max-height: 36px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid #c6c6c4;
+  box-shadow: inset 0px -1px 1px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  padding-bottom:10px;
+}
+
+#bannerbox {
+  padding: 0px;
+  padding-top: 60px;
+  width: 987px;
+  margin: auto;
+}
+@media (max-width: 1000px) {
+  #bannerbox {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+#banner {
+  padding: 0px;
+  padding-left: 38px;
+  margin: 0px;
+  display: table-cell;
+}
+@media (max-width: 1000px) {
+  #banner {
+    display: block;
+    padding-left: 0px;
+  }
+}
+
+@media (max-width: 420px) {
+  #banner img {
+    height: 91px;
+    width: 297px;
+  }
+}
+
+.appdescription {
+  color: #3d4047;
+  color: #787e8b;
+  display: table-cell;
+  top: 00px;
+  text-align: left;
+  vertical-align: top;
+  padding-top: 20px;
+  padding-left: 27px;
+  font-size: 25px;
+  line-height: 1.4em;
+}
+@media (max-width: 1000px) {
+  .appdescription {
+    display: block;
+    text-align: center;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+
+.appdescription a:link, .appdescription a:visited {
+  color: #0b8fe2;
+}
+
+@media (max-width: 480px) {
+  #faqs {
+        display:none;
+   }
+ }
+
+/*Navigation*/
+#navigation {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  margin: auto;
+  text-align: center;
+  background-color: #000;
+}
+
+#innernav {
+  display:inline-block;
+  padding-right:40px;
+  }
+
+@media (max-width: 480px) {
+  #innernav {padding-right:5px; }
+ }
+
+@media (max-width: 480px) {
+#navigation {
+  font-size: 65%;
+   }
+}
+
+#navigation a {
+  padding-right: 40px;
+}
+
+@media (max-width:480px) {
+  #navigation a {padding-right:15px; }
+ }
+
+#navigation #applink {
+   width:131px;
+   height:31px;
+ }
+
+#navigation a:last-child {
+  padding: 0px;
+}
+
+#navigation a:link, #navigation a:visited {
+  color: #fff;
+}
+
+#navigation a:hover {
+  color: #0b8fe2;
+}
+
+@media (max-width: 500px) {
+  #loginbutton {
+    width:100px;
+  }
+}
+
+@media (max-width: 500px) {
+  #loginbutton {
+    margin-top:40px;
+  }
+}
+
+@media (max-width: 650px) {
+  #facebooklink {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  #twitterlink {
+    display: none;
+  }
+}
+/*
+@media (max-width: 400px) {
+  #bloglink {
+    display: none;
+  }
+}
+*/
+/*Content*/
+#pagebox {
+  margin: 0px;
+  color: #444;
+  height: 100%;
+  padding-bottom: 1em;
+  text-align: center;
+  text-align: center;
+}
+
+#contentsidebarbox {
+  margin: auto;
+  margin-top: 2.5em;
+  margin-bottom: 2em;
+  width: 987px;
+  background-color: rgba(255, 255, 255, 0.4);
+  box-shadow: inset 0px 0px 10px white, 0px 1px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+@media (max-width: 1000px) {
+  #contentsidebarbox {
+    width: 100%;
+    border-radius: 0px;
+  }
+}
+
+#content {
+  display: table-cell;
+  text-align: left;
+  max-width: 549px;
+  min-width: 549px;
+  width: 549px;
+  margin: auto;
+  padding-top: 38px;
+  color: #555;
+  #padding-bottom: 1em;
+  padding-right: 90px;
+  padding-left: 38px;
+  border-radius: 2px;
+}
+@media (max-width: 950px) {
+  #content {
+    #display: block;
+    padding-right: 0px;
+  }
+}
+@media (max-width: 840px) {
+  #content {
+    display: block;
+  }
+}
+@media (max-width: 600px) {
+  #content {
+    padding-left: 8px;
+    padding-right: 8px;
+    min-width: 420px;
+    max-width: 420px;
+    width: 420px;
+  }
+}
+@media (max-width: 420px) {
+  #content {
+    min-width: 300px;
+    max-width: 300px;
+    width: 300px;
+  }
+}
+
+#content p:last-child {
+  #border-bottom: 1px dotted #af451a;
+}
+
+#pagecontent {
+  text-align: left;
+  width: 987px;
+  #background-color: blue;
+  margin: auto;
+  padding-left: 73px;
+  padding-top: 42px;
+  #border-top: 1px dotted #ccc;
+}
+
+#standardbanner {
+  text-align: center;
+  padding-top: 60px;
+}
+
+/*
+@media (max-width: 480px) {
+ #standardbanner {width: 75%;}
+ }
+*/
+@media (max-width: 420px) {
+  #standardbanner img {
+    height: 91px;
+    width: 297px;
+  }
+}
+
+#standardpagecontent {
+  text-align: left;
+  margin: auto;
+  width: 608px;
+  padding-top: 47px;
+  padding-left: 38px;
+  padding-right: 38px;
+  padding-bottom: 38px;
+}
+@media (max-width: 700px) {
+  #standardpagecontent {
+    width: 75%;
+  }
+}
+
+#premiumscreenshots {
+   width:532px;
+   padding-top:20px;
+ }
+@media (max-width:480px) {
+#premiumscreenshots {display:none;}
+ }
+
+ @media (max-width:480px) {
+#premiumtable {width:75%}
+ }
+
+#standardpagecontent h1 {
+  color: #af451a;
+  color: #555;
+  font-size: 2.5em;
+  padding-bottom: 18px;
+  line-height: 1em;
+}
+
+#standardpagecontent h2, #standardpagecontent h3, #standardpagecontent h4, #standardpagecontent p {
+  margin-bottom: 18px;
+}
+
+/*Sidebar*/
+#sidebar {
+  display: table-cell;
+  vertical-align: top;
+  width: 270px;
+  max-width: 270px;
+  #background-color: blue;
+}
+@media (max-width: 950px) {
+  #sidebar {
+    background-color: transparent;
+    border-left: 0px solid white;
+    border-right: 0px solid white;
+  }
+}
+@media (max-width: 840px) {
+  #sidebar {
+    max-width: 100%;
+    width: 100%;
+    display: block;
+    #background-color: red;
+  }
+}
+
+#innersidebar {
+  margin-left: 19px;
+  width: 254px;
+  height: 100%;
+}
+@media (max-width: 950px) {
+  #innersidebar {
+    margin-left: 0px;
+  }
+}
+@media (max-width: 840px) {
+  #innersidebar {
+    width: 100%;
+    #background-color: blue;
+    height: 262px;
+  }
+}
+
+#downloadbox {
+  width: 236px;
+  -webkit-transform: translateY(-36px);
+  -moz-transform: translateY(-36px);
+  transform: translateY(-36px);
+  height: 353px;
+  background: url("../marketlinksbackground.png");
+  font-family: "Myriad Web Pro", "Myriad Pro", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+}
+@media (max-width: 840px) {
+  #downloadbox {
+    padding-top: 2px;
+    background: transparent;
+    width: 100%;
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    transform: translateY(0px);
+    text-align: center;
+  }
+}
+
+#downloadbox a, #downloadbox a:link, #downloadbox a:visited {
+  color: white;
+  font-weight: bold;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
+  text-align: left;
+  padding-left: 55px;
+  line-height: 1.2em;
+  padding-top: 26px;
+}
+@media (max-width: 840px) {
+  #downloadbox a, #downloadbox a:link, #downloadbox a:visited {
+    #display: inline-block;
+    padding-left: 0px;
+  }
+}
+
+.downloadButton {
+  display: block;
+  height: 68px;
+  width: 195px;
+}
+@media (max-width: 840px) {
+  .downloadButton {
+    text-align: center;
+  }
+}
+
+#downloadAndroidButton {
+  background: url("/images/play_store_badge.png");
+  background-repeat: no-repeat;
+
+  background-size: 172px 60px;
+  position: relative;
+  left: 19px;
+}
+@media (max-width: 840px) {
+  #downloadAndroidButton {
+    position: static;
+    top: 0px;
+    left: 0px;
+    margin: auto;
+  }
+}
+
+#downloadiPhoneButton {
+  background: url("/images/app_store_badge.png");
+  background-repeat: no-repeat;
+  background-size: 172px 60px;
+  position: relative;
+  left: 19px;
+}
+@media (max-width: 840px) {
+  #downloadiPhoneButton {
+    position: static;
+    top: 0px;
+    left: 0px;
+    margin: auto;
+  }
+}
+
+#photobox {
+  position: relative;
+  left: -140px;
+ /* top: 36px;*/
+}
+@media (max-width: 1150px) {
+  #photobox {
+    display: none;
+  }
+}
+
+#photobox img {
+  #-webkit-transform: translate(-140px, 36px);
+  #-moz-transform: translate(-140px, 36px);
+  #transform: translate(-140px, 36px);
+  #background-color: orange;
+}
+
+/*Screen shots*/
+#screenshots {
+  margin-top: 4em;
+  margin-bottom: 2em;
+}
+@media (max-width: 840px) {
+  #screenshots {
+    width: 420px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-width: 420px) {
+  #screenshots {
+    width: 280px;
+  }
+}
+
+#screenshots a {
+  display: inline-block;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+#screenshots img {
+  border: 1px solid black;
+  box-shadow: inset 0px 1px 1px red, 0px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+#screenshots p {
+  margin-top: 2em;
+}
+
+#screenshots h4 {
+  display: inline;
+}
+
+/*Footer - navigation*/
+#footer {
+  padding-bottom: 30px;
+  padding-top: 31px;
+  margin: 0px;
+  font-family: "Myriad Web Pro", "Myriad Pro", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  text-shadow: 0px 1px 1px white;
+  text-align: center;
+  #background-repeat: no-repeat;
+  #background-position: center top;
+  border-top: 1px solid #c6c6c4;
+  box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+#footer a:link, #footer a:visited {
+  color: #0976bb;
+}
+
+#footer a:hover {
+  color: #2ba7f5;
+}
+
+#copyright {
+  #margin-top: 1em;
+}
