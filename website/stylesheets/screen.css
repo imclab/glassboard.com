@@ -59,7 +59,7 @@ body {
   margin-left: 0px;
   margin-right: 0px;
   line-height: 1.65em;
-  font-family: Georgia, Times, serif;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 18px;
   color: #333333;
   background-color: #e2e2e2;
@@ -122,7 +122,7 @@ li {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
-  font-family: "Myriad Web Pro", "Myriad Pro", Helvetica, Arial, sans-serif;
+  /*font-family: "Myriad Web Pro", "Myriad Pro", Helvetica, Arial, sans-serif;*/
   margin-bottom: 28px;
 }
 
