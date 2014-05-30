@@ -1,0 +1,66 @@
+<!--#include file="_head.html"-->
+  <body class="default premium">
+
+  <!--#include file="_nav.html"-->
+  <div class="header">
+    <div class="row">
+      <div class="medium-8 medium-offset-2 columns end">
+        <h1>Glassboard Premium</h1>
+        <h3 class="center">Support Glassboard and get a more robust version with extra bits of functionality.</h3>
+        <hr>
+        <p class="pricing">$5.00/month &nbsp;<span>&ndash; or &ndash;</span>&nbsp; $24.99/year</p>
+        <div class="go-premium">
+          <a href="case-studies/q-branch.html" class="round button">Sign Up Now</a>
+        </div>
+        <p class="light-text">Have a question about Glassboard premium? <a href="#">Check out our FAQs.</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="premium-features medium-8 medium-offset-2 end columns">
+      <!--<p class="subtitle">&mdash; Premium Features &mdash;</p>-->
+            
+      <div class="premium-feature">
+        <span class="icon-gb-unlimited"></span>
+        <h4>Unlimited Boards</h4>
+        <h5>Free users get three boards.</h5>
+        <p>Premium users can create as many boards as they like. Create a board for your family, friend groups, book club, or whatever you can imagine. </p>
+      </div>
+      <div class="premium-feature">
+        <span class="icon-gb-storage"></span>
+        <h4>1GB of Storage Per Board</h4>
+        <h5>Free users get 100MB.</h5>
+        <p>Need more storage for your photos and videos? Boards owned by premium users have up to 1GB of storage space for all their content so you don't have to worry about keeping track of how much you are sharing.</p>
+      </div>
+      <div class="premium-feature">
+        <span class="icon-gb-export"></span>
+        <h4>Export Your Boards</h4>
+        <p>Would you like a copy of everything that was posted to your board since the beginning? As a premium customer you can now export all of the content from the boards that you chair. This includes all messages, comments, likes, pictures, videos - everything!</p>
+      </div>
+      <div class="premium-feature">
+        <span class="icon-gb-transfer"></span>
+        <h4>Transfer Board Chair</h4>
+        <p>Care to hand the reins of a board over to someone else? Now you can! Glassboard premium customers can transfer the board chair role over to other premium members in their boards.</p>
+      </div>
+      <div class="premium-feature">
+        <span class="icon-gb-bookmark"></span>
+        <h4>Bookmark Important Posts</h4>
+        <p>See a message or comment you want to follow up on? You can bookmark messages and they will be saved for later.</p>
+      </div>
+    </div>
+  </div>
+
+	<!--#include file="_footer.html"-->
+
+    <script src="bower_components/jquery/jquery.js"></script>
+    <script src="bower_components/foundation/js/foundation.min.js"></script>
+    <script src="bower_components/foundation/js/foundation/foundation.interchange.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/imagelightbox.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+
+  </body>
+</html>

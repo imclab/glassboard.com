@@ -1,0 +1,46 @@
+<!--#include file="_head.html"-->
+  <body class="case-studies">
+
+  <!--#include file="_nav.html"-->
+  
+  <div class="header">
+    <div class="row">
+      <div class="medium-9 columns">
+        <p class="page-subtitle">Case Studies</p>
+        <h1>Q Branch crafts precision tools for discerning iOS and Mac users. Its founding partners are Brent Simmons, Dave Wiskus, and John Gruber.</h1>
+      </div>
+      <div class="medium-3 columns">
+        <ul class="sub-nav desktop">
+          <li class="active"><a href="q-branch.shtml">Q Branch</a></li>
+          <li><a href="360dev.shtml">360|iDev Conference</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="medium-4 medium-push-8 columns columns">
+      <img class="vesper" data-interchange="[img/2x/vesper-mobile.png, (small)], [img/2x/vesper.png, (medium)]">
+      <p class="caption">Q Branch is the three-man team responsible for <a href="http://vesperapp.co/">Vesper</a>, the simple and elegant tool for collecting notes.</p>
+    </div>
+    <div class="medium-8 medium-pull-4 columns">
+      <h4>How are you using Glassboard?</h4>
+      <p>We use Glassboard for day-to-day communication between the three of us. John and I use iMessage for rapid design discussion, but for anything over the threshold of nerding out over font weights or nit-picking comps, we turn to Glassboard. And not just product discussion; we cover everything from business paperwork to travel arrangement through Glassboard. As far as we’re concerned, email doesn’t exist.</p>
+      <p>Externally, Glassboard is how we communicate with our beta team. A lot of the betas I participate in feel like one-sided conversations. We wanted to give our team a way to communicate not just with us, but with each other. We get a lot of great feedback and ideas that way. Brent has used email discussion lists in the past, but Glassboard seems to facilitate more interesting conversations.</p>
+      <h4>Why Glassboard? </h4>
+      <p>The easy answer is Brent, but that’s not the whole story. We’ve explored other options and have even tried a few out. Glassboard’s web app, iOS app, notifications, and logical hierarchy work for us in a way that nothing else seems to. Email fails because it’s too inclusive of the outside world. For a virtual company like ours, we need a safe space to call our own. </p>
+      <h4>If not Glassboard what would you use? </h4>
+      <p>I’m just guessing here, but probably something like IRC for chat and email for heavier, asynchronous threads. </p>
+    </div>
+  </div>
+
+	<!--#include file="_footer.html"-->
+
+
+    <script src="bower_components/jquery/jquery.js"></script>
+    <script src="bower_components/foundation/js/foundation.min.js"></script>
+    <script src="bower_components/foundation/js/foundation/foundation.interchange.js"></script>
+    <script src="js/app.js"></script>
+
+  </body>
+</html>

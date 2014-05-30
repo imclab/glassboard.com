@@ -1,0 +1,197 @@
+<!--#include file="_head.html"-->
+  <body class="home">
+
+  <!-- H E R O -->
+  <div class="home-hero">
+  	<div class="hero-image">
+  	
+	  	<div class="row header">
+	  		<img src="img/glassboard.png" class="logo">
+		  	<ul id="top-nav">
+					<li class="login"><a href="https://app.glassboard.com/" class="round button">Log In</a></li>
+					<li class="signup"><a href="https://app.glassboard.com/web/Register?ReturnUrl=%2Fweb%2F" class="round button">Sign Up</a></li>
+				</ul>
+				</div><!--/.row-->
+
+				<div class="row">
+				<div class="medium-7 columns end">
+					<h1>Talk to your people.</h1>
+					<p class="desktop">Communicate, coordinate, and collaborate with your groups from any mobile device and the web. Whether it’s your company, your team, your friends, or your family, Glassboard lets you keep everybody up to date.</p>
+					<p class="mobile">Communicate, coordinate, and collaborate with your groups from any mobile device and the web.</p>
+					<ul class="store-logos mobile">
+						<li><a href="https://itunes.apple.com/us/app/glassboard/id453661198?ls=1&mt=8"><img src="img/2x/appstore.png"></a></li>
+						<li><a href="https://play.google.com/store/apps/details?id=com.sepialabs.glassboard"><img src="img/2x/playstore.png"></a></li>
+					</ul>
+				</div>
+			</div><!--/.row-->
+
+			<div class="iphone"></div>
+		</div><!--/.hero-image-->
+	</div><!--/.home-hero-->
+
+	<!-- F E A T U R E S -->
+	<div class="row features">
+		<ul class="store-logos">
+			<li><a href="https://itunes.apple.com/us/app/glassboard/id453661198?ls=1&mt=8"><img src="img/2x/appstore.png"></a></li>
+			<li><a href="https://play.google.com/store/apps/details?id=com.sepialabs.glassboard"><img src="img/2x/playstore.png"></a></li>
+		</ul>
+		<h3 class="mobile">Whether it’s your company, your team, your friends, or your family, Glassboard lets you keep everybody up to date.</h3>
+		<div class="feature-list-item medium-3 columns">
+			<span class="icon-gb-chat"></span>
+			<h4>Group Chat Messages</h4>
+			<p>Never get lost in the conversation again. Reply to specific message so your people know who exactly you're responding to.</p>
+		</div>
+		<div class="feature-list-item medium-3 columns">
+			<span class="icon-gb-photo"></span>
+			<h4>Share Photos &amp; Video</h4>
+			<p>Have media you want to share? Upload it to your Glassboard for all of your board to see. </p>
+		</div>
+		<div class="feature-list-item medium-3 columns">
+			<span class="icon-gb-location"></span>
+			<h4>Share Your Location</h4>
+			<p>Need to share your current location? Just pin it to a Glassboard message and any board members can see where you are.</p>
+		</div>
+		<div class="feature-list-item medium-3 columns">
+			<span class="icon-gb-docs"></span>
+			<h4>Send &amp; Collaborate</h4>
+			<p>Share presentations, documents, or a PDF to share with your colleagues by uploading it privately and securely to your board.</p>
+		</div>
+	</div>
+
+	<!-- T E S T I M O N I A L S -->
+	<div class="testimonial">
+		<div class="row">
+			<!--<span class="icon-gb-quote"></span>-->
+      <img src="img/2x/brentsimmons.png" class="avatar">
+			<blockquote>&ldquo;And not just product discussion; we cover everything from business paperwork to travel arrangement through Glassboard. As far as we’re concerned, email doesn’t exist.&rdquo;<cite>Brent Simmons <span>of Q Branch</span></cite></blockquote>
+      <a href="q-branch.shtml" class="round button">Read the Case Study</a><br/>
+		</div>
+	</div><!--/.testimonial-->
+
+	<div class="row section">
+		<!--<div class="medium-5 columns">
+      <img src="img/2x/android-shot.png" class="android-device">
+    </div>-->
+    <div class="medium-10 medium-offset-1 columns">
+      <span class="icon-gb-lock"></span>
+      <h2>Private &amp; Secure</h2>
+  		<p>Everything you post on Glassboard is private and secure. You own the data on your boards. Glassboard will never even think about exposing it.</p>
+      <hr>
+      <!--<h4>Check out screenshots of the app:</h4>-->
+      <div class="row screenshots">
+        <div class="small-6 medium-3 columns screenshot">
+          <a href="img/screenshots/ios_1.png" data-imagelightbox="b"><img src="img/screenshots/ios_1_thumb.jpg"></a>
+        </div>
+        <div class="small-6 medium-3 columns screenshot">
+          <a href="img/screenshots/ios_2.png" data-imagelightbox="b"><img src="img/screenshots/ios_2_thumb.jpg"></a>
+        </div>
+        <div class="small-6 medium-3 columns screenshot">
+          <a href="img/screenshots/ios_3.png" data-imagelightbox="b"><img src="img/screenshots/ios_3_thumb.jpg"></a>
+        </div>
+        <div class="small-6 medium-3 columns screenshot">
+          <a href="img/screenshots/ios_4.png" data-imagelightbox="b"><img src="img/screenshots/ios_4_thumb.jpg"></a>
+        </div>
+      </div>
+    </div>
+	</div>
+
+  <!--#include file="_footer.html"-->
+	
+  <script src="bower_components/jquery/jquery.js"></script>
+  <script src="bower_components/foundation/js/foundation.min.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/imagelightbox.min.js"></script>
+  
+  <script>
+  $( function()
+  {
+    var activityIndicatorOn = function()
+      {
+        $( '<div id="imagelightbox-loading"><div></div></div>' ).appendTo( 'body' );
+      },
+      activityIndicatorOff = function()
+      {
+        $( '#imagelightbox-loading' ).remove();
+      },
+
+      overlayOn = function()
+      {
+        $( '<div id="imagelightbox-overlay"></div>' ).appendTo( 'body' );
+      },
+      overlayOff = function()
+      {
+        $( '#imagelightbox-overlay' ).remove();
+      },
+
+      closeButtonOn = function( instance )
+      {
+        $( '<a href="#" id="imagelightbox-close">Close</a>' ).appendTo( 'body' ).on( 'click', function(){ $( this ).remove(); instance.quitImageLightbox(); return false; });
+      },
+      closeButtonOff = function()
+      {
+        $( '#imagelightbox-close' ).remove();
+      },
+
+      captionOn = function()
+      {
+        var description = $( 'a[href="' + $( '#imagelightbox' ).attr( 'src' ) + '"] img' ).attr( 'alt' );
+        if( description.length > 0 )
+          $( '<div id="imagelightbox-caption">' + description + '</div>' ).appendTo( 'body' );
+      },
+      captionOff = function()
+      {
+        $( '#imagelightbox-caption' ).remove();
+      },
+
+      navigationOn = function( instance, selector )
+      {
+        var images = $( selector );
+        if( images.length )
+        {
+          var nav = $( '<div id="imagelightbox-nav"></div>' );
+          for( var i = 0; i < images.length; i++ )
+            nav.append( '<a href="#"></a>' );
+
+          nav.appendTo( 'body' );
+          nav.on( 'click touchend', function(){ return false; });
+
+          var navItems = nav.find( 'a' );
+          navItems.on( 'click touchend', function()
+          {
+            var $this = $( this );
+            if( images.eq( $this.index() ).attr( 'href' ) != $( '#imagelightbox' ).attr( 'src' ) )
+              instance.switchImageLightbox( $this.index() );
+
+            navItems.removeClass( 'active' );
+            navItems.eq( $this.index() ).addClass( 'active' );
+
+            return false;
+          })
+          .on( 'touchend', function(){ return false; });
+        }
+      },
+      navigationUpdate = function( selector )
+      {
+        var items = $( '#imagelightbox-nav a' );
+        items.removeClass( 'active' );
+        items.eq( $( selector ).filter( '[href="' + $( '#imagelightbox' ).attr( 'src' ) + '"]' ).index( selector ) ).addClass( 'active' );
+      },
+      navigationOff = function()
+      {
+        $( '#imagelightbox-nav' ).remove();
+      };
+
+    $( 'a[data-imagelightbox="b"]' ).imageLightbox(
+    {
+      onStart:   function() { overlayOn(); },
+      onEnd:     function() { overlayOff(); activityIndicatorOff(); },
+      onLoadStart: function() { activityIndicatorOn(); },
+      onLoadEnd:   function() { activityIndicatorOff(); }
+    });
+
+
+  });
+</script>
+
+  </body>
+</html>
