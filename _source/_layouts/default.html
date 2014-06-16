@@ -18,9 +18,24 @@
     <meta name="keywords" content="second gear, sepia labs, glassboard, privacy, group messaging, software, iphone, android, apps, iphone apps, android apps, group sharing, private social network" />
     <meta name="description" content="Glassboard - The best way to communicate, collaborate, and coordinate with your people." />
 	</head>
-	<body class="home">
+	<body class="default">
     {% include header.html %}
-		{{ content }}
+    {% include nav.html %}
+    <div class="header">
+    <div class="row">
+      <div class="medium-12 columns">
+        <h1>{% if page.title %} {{ page.title }} {% endif %}</h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="medium-8 medium-offset-2 columns end">
+      <div id="standardpagecontent">
+		    {{ content }}
+      </div>
+    </div>
+  </div>
     {% include footer.html %}
 	</body>
 
