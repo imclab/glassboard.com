@@ -3,20 +3,7 @@ require 'date'
 task :default => :deploy
 
 task :build do
-  pids = [
-  	spawn("scss --watch _source/assets:_source/stylesheets"),
-  	spawn("jekyll build -s ./_source ./website"),
-    # spawn("coffee -b -w -o javascripts -c _source/_assets/*.coffee")
-  ]
-
-  trap "INT" do
-    Process.kill "INT", *pids
-    exit 1
-  end
-
-  loop do
-    sleep 1
-  end
+  sh "jekyll build -s ./_source ./website"
 end
 
 desc "clean"

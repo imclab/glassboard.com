@@ -1,0 +1,11 @@
+{
+  "name": "Glassboard",
+  "dependencies": {
+    "foundation": "zurb/bower-foundation"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ]
+}
