@@ -24,12 +24,18 @@ module.exports = function(grunt) {
         files: 'scss/**/*.scss',
         tasks: ['sass']
       }
+    },
+    exec: {
+      build: {
+        cmd: 'jekyll build -s ./ ../website'
+      }
     }
   });
 
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-exec');
 
-  grunt.registerTask('build', ['sass']);
-  grunt.registerTask('default', ['build','watch']);
+  grunt.registerTask('build', ['sass', 'exec:build']);
+  grunt.registerTask('default', ['build']);
 }
