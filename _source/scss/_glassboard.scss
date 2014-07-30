@@ -816,3 +816,20 @@ body.case-studies {
 		}
 	}
 }
+
+
+
+
+  /* Sign Up =========== */
+  fieldset {
+    border: none;
+    
+    input {
+      box-shadow: none;
+      padding: 20px 10px;
+      border-radius: 2px;
+    }
+  }
+  .actions-vertical {
+    text-align: center;
+  }
