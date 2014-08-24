@@ -48,7 +48,7 @@
     <script type="text/javascript" src="//use.typekit.net/gbr7kuo.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 </head>
-<body class="site register default">
+<body class="site login default">
   <div class="row nav">
     <a href="index.shtml"><img src="img/glassboard-blue.png" class="logo"></a>
     <ul id="top-nav">
@@ -66,9 +66,13 @@
   
   <div class="row">
     <div class="medium-8 medium-offset-2 columns">
-      <form action="/web/Account/Login?ReturnUrl=%2Fweb%2F" method="post">            <fieldset>
-                <div class="validation-summary-valid" data-valmsg-summary="true"><ul><li style="display:none"></li>
-</ul></div>
+      <form action="/web/Account/Login?ReturnUrl=%2Fweb%2F" method="post">
+        <fieldset>
+          <div class="validation-summary-valid" data-valmsg-summary="true">
+            <ul>
+              <li style="display:none"></li>
+            </ul>
+          </div>
                 
                 <div class="form-block">
                     <div class="overlabel-wrapper">
@@ -76,7 +80,7 @@
                     </div>
                     <div class="button-row overlabel-wrapper">
                         <input data-val="true" data-val-required="The Password field is required." id="Password" name="Password" placeholder="Password" type="password" />
-                        <button type="submit" data-spinner="darkButton">SIGN IN</button>
+                        <button type="submit" data-spinner="darkButton" class="round button">Sign In</button>
                     </div>
                 </div>
                 
@@ -88,24 +92,27 @@
                     }
                 </script>
 
-                <div class="login-tools">
-                    <div class="left">
-                        <a href="/web/Register/ForgotPassword">Forgot password?</a>
-                    </div>
+                <div class="login-tools row">
+                  <div class="medium-6 columns">
+                    <input data-val="true" data-val-required="The Keep me signed in field is required." id="RememberMe" name="RememberMe" type="checkbox" value="true" /><input name="RememberMe" type="hidden" value="false" />
+                    <label for="RememberMe">Keep me signed in</label>
+                    <input name="__RequestVerificationToken" type="hidden" value="YFQ5B0P8QkQgbpZepr4sDZDKTQgeyZbXcr1VA2HgItYy10odCZI7U8Sfm794lGsFcipsY0xOPQezXvq_M5TNUyCrHc81" />
+                  </div>
 
-                    <div class="checkbox right">
-                        <input data-val="true" data-val-required="The Keep me signed in field is required." id="RememberMe" name="RememberMe" type="checkbox" value="true" /><input name="RememberMe" type="hidden" value="false" />
-                        <label for="RememberMe">Keep me signed in</label>
-                    </div>
+                  <div class="medium-6 columns right">
+                      <a href="/web/Register/ForgotPassword">Forgot password?</a>
+                  </div>
 
-                    <br class="clear" />
                 </div>
 
-                <input name="__RequestVerificationToken" type="hidden" value="YFQ5B0P8QkQgbpZepr4sDZDKTQgeyZbXcr1VA2HgItYy10odCZI7U8Sfm794lGsFcipsY0xOPQezXvq_M5TNUyCrHc81" />
+                
             </fieldset>
 </form>
+      
+      <div class="callout">
+        <p>Don't have an account?<br><a href="https://app.glassboard.com/web/Account/Login?ReturnUrl=%2Fweb%2F">Sign up now &rarr;</a></p>
+      </div>
 
-      <p>Already have an account? <a href="https://app.glassboard.com/web/Account/Login?ReturnUrl=%2Fweb%2F">Sign in</a>.</p>
     </div>
   </div>
   
