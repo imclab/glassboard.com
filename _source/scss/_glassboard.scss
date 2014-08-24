@@ -820,16 +820,35 @@ body.case-studies {
 
 
 
-  /* Sign Up =========== */
-  fieldset {
-    border: none;
-    
-    input {
-      box-shadow: none;
-      padding: 20px 10px;
-      border-radius: 2px;
+/* Sign Up =========== */
+fieldset {
+  border: none;
+  
+  input {
+    box-shadow: none;
+    padding: 20px 10px;
+    border-radius: 2px;
+  }
+}
+.actions-vertical {
+  text-align: center;
+}
+
+body.register {
+  .header {
+    margin-bottom: 0;
+  }
+  .row {
+    p {
+      margin: 0 0 40px;
+      text-align: center;
+    }
+    fieldset {
+      margin: 0;
+      padding-bottom: 0;
+      button.happy {
+        margin-bottom: 10px;
+      }
     }
   }
-  .actions-vertical {
-    text-align: center;
-  }
+}
